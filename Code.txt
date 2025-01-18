@@ -272,7 +272,7 @@ return jsonify({"success": True})
 def get_unresolved_queries(): 
 return jsonify(unresolved_queries) 
 port = 5000 
-ngrok.set_auth_token("2nuuB9WNU3xymLt9sVcKhQsjyrG_61pvVyjXpUKHvPCDsxuAy") 
+ngrok.set_auth_token("Enter ngrok authentication token") 
 public_url= ngrok.connect(port) 
 print(f" * ngrok tunnel \"{public_url}\" -> \"http://127.0.0.1:{port}\"") 
 if __name__ == '__main__': 
